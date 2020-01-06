@@ -5,7 +5,7 @@ This was a early mock up for PDPT, my Techathon project to demonstrate my skills
 Utilizing three Raspberry Pi Bluetooth trackers, PSQL w/ Heroku, and this website, one could track employee location and times, and during a disaster, declare safety and coordinate rescue efforts.
 
 ## Requirements
-Make sure to have npm, yarn, React, Babel, momentjs, sweetalert
+Make sure to have npm, yarn, React, Babel, momentjs, sweetalert, react-router, react-router-dom
 
 
 

@@ -1,0 +1,40 @@
+.Nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color:white;
+}
+
+.About {
+  font-size: 26px;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.PDPT{
+  text-align: center;
+}
+
+li {
+  padding:10px;
+  float: left;  
+}
+
+.whiteLink{
+  color:white
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
