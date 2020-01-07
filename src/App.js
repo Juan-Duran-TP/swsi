@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Employee, Main} from './Employee.js';
+import {Ship, Main} from './ShipIndex.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,20 +18,20 @@ function App() {
               <Link to="/" className="whiteLink">Home</Link>
             </li>
             <li>
-              <Link to="/safetyofficer" className="whiteLink">Safety Officer</Link>
+              <Link to="/shipindex" className="whiteLink">Ship Index</Link>
             </li>
             <li>
-              <Link to="/employee" className="whiteLink">Employee</Link>
+              <Link to="/addship" className="whiteLink">Add Ship</Link>
             </li>
           </ul>
         </nav>
 
         <Switch>
-          <Route path="/safetyofficer">
+          <Route path="/shipindex">
             <Main />
           </Route>
-          <Route path="/employee">
-            <Employee id={3}/>
+          <Route path="/addship">
+            <About />
           </Route>
           <Route path="/">
             <About />
@@ -45,14 +45,13 @@ function App() {
 function About() {
   return (
     <div className="About">
-      <h2 className="PDPT">Post Disaster Personnel Tracker</h2>
+      <h2 className="SWSI">Star Wars Ship Index</h2>
       <p>
-        Post Disaster Personnel Tracker (PDPT) is a service that aims to provide
-        a way to account for the safety status and location of employees following
-        some kind of emergency or disaster. Location and time is tracked via Bluetooth
-        proximity sensing from Raspberry Pis located around the facility while safety
-        status is either self-declared or declared by corresponding safety officers
-        (fire wardens, managers, etc).
+        Star Wars Ship Index (SWSI) is a simple interface to 
+        look at a few bits of trivia on the various space 
+        ships of the Star Wars Universe. The technology behind
+        this is simply a React/React-Router front end querying
+        a MySQL database to display the appropriate information.
 
       </p>
 
